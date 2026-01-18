@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sea Glass Venue — an intimate coastal wedding venue in Pawleys Island, SC. Where the coast becomes the moment."
+    />
+    <title>Sea Glass Venue | Coastal Weddings in Pawleys Island, SC</title>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="nav" role="banner">
+      <div class="container nav__inner">
+        <a
+          href="index.html"
+          class="nav__logo"
+          aria-label="Sea Glass Venue - Home"
+        >
+          Sea Glass Venue
+        </a>
+
+        <button
+          class="nav__toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav__links" id="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="nav__link is-active" aria-current="page"
+            >Home</a
+          >
+          <a href="gallery.html" class="nav__link">Gallery</a>
+          <a href="details.html" class="nav__link">Details</a>
+          <a href="inquiry.html" class="nav__link">Inquiry</a>
+        </nav>
+
+        <div class="nav__overlay" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero__media">
+        <img
+          src="assets/hero.svg"
+          alt="Coastal view at golden hour with gentle waves meeting the shore"
+          loading="eager"
+        />
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__tagline">Where the coast becomes the moment.</p>
+        <h1 class="hero__title">Sea Glass Venue</h1>
+        <p class="mb-xl">An intimate place for the day you've imagined.</p>
+        <div class="hero__actions">
+          <a href="inquiry.html" class="btn btn--white">Begin your day</a>
+          <a
+            href="gallery.html"
+            class="btn btn--ghost"
+            style="
+              color: white;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            "
+            >View the space</a
+          >
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- The Experience Section -->
+      <section class="experience" aria-labelledby="experience-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label">The Experience</span>
+            <h2 class="section-title" id="experience-heading">
+              Four moments. One unforgettable day.
+            </h2>
+            <p class="section-subtitle">
+              Each hour here unfolds with intention. The light shifts. The
+              breeze settles. And your story writes itself against the coast.
+            </p>
+          </header>
+
+          <div class="experience__grid reveal-stagger">
+            <article class="moment">
+              <figure class="moment__image">
+                <img
+                  src="assets/experience-ceremony.svg"
+                  alt="Intimate beachside ceremony with flowing fabric and ocean backdrop"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="moment__title">Ceremony</h3>
+              <p class="moment__text">
+                Salt air carries your words to the horizon.
+              </p>
+            </article>
+
+            <article class="moment">
+              <figure class="moment__image">
+                <img
+                  src="assets/experience-reception.svg"
+                  alt="Elegantly decorated reception space with soft candlelight"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="moment__title">Reception</h3>
+              <p class="moment__text">
+                Candlelight, laughter, and barefoot dancing.
+              </p>
+            </article>
+
+            <article class="moment">
+              <figure class="moment__image">
+                <img
+                  src="assets/experience-sunset.svg"
+                  alt="Golden sunset painting the sky over calm coastal waters"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="moment__title">Sunset</h3>
+              <p class="moment__text">
+                The sky performs its daily masterpiece.
+              </p>
+            </article>
+
+            <article class="moment">
+              <figure class="moment__image">
+                <img
+                  src="assets/experience-evening.svg"
+                  alt="Evening gathering under string lights with ocean breeze"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="moment__title">Evening</h3>
+              <p class="moment__text">
+                Stars emerge. The night is just beginning.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Space Section -->
+      <section class="space" aria-labelledby="space-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label">The Space</span>
+            <h2 class="section-title" id="space-heading">
+              Where sea glass meets ceremony
+            </h2>
+            <p class="section-subtitle">
+              Weathered wood. Open sky. The kind of beauty that doesn't try too
+              hard.
+            </p>
+          </header>
+
+          <div class="space__grid reveal">
+            <figure class="space__item">
+              <img
+                src="assets/space-1.svg"
+                alt="Wide view of the venue's coastal terrace overlooking the water"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="space__item">
+              <img
+                src="assets/space-2.svg"
+                alt="Intimate corner with driftwood details and soft linens"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="space__item">
+              <img
+                src="assets/space-3.svg"
+                alt="The ceremony lawn with natural sea oats framing the view"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="space__item">
+              <img
+                src="assets/space-4.svg"
+                alt="Reception pavilion with exposed beams and ocean views"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="space__item">
+              <img
+                src="assets/space-5.svg"
+                alt="Bridal suite with soft morning light streaming through windows"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="space__item">
+              <img
+                src="assets/space-6.svg"
+                alt="Evening view with lanterns illuminating the pathway to the shore"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="space__cta reveal">
+            <a href="gallery.html" class="btn btn--outline"
+              >Explore the full gallery</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- The Day Section (Timeline) -->
+      <section class="day" aria-labelledby="day-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label">The Day</span>
+            <h2 class="section-title" id="day-heading">
+              A rhythm, not a schedule
+            </h2>
+            <p class="section-subtitle">
+              We don't rush. We don't over-plan. We let the day breathe.
+            </p>
+          </header>
+
+          <div class="timeline">
+            <article class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__time">
+                <h3 class="timeline__label">Arrival</h3>
+              </div>
+              <div class="timeline__content">
+                <p class="timeline__desc">
+                  The venue opens its doors. Coffee brews. Hair and makeup begin
+                  in the bridal suite while groomsmen settle into the cottage.
+                  The day starts slow, unhurried.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__time">
+                <h3 class="timeline__label">Ceremony</h3>
+              </div>
+              <div class="timeline__content">
+                <p class="timeline__desc">
+                  Guests gather on the lawn or by the shore. The breeze carries
+                  music. Vows are exchanged with sand between toes and salt on
+                  lips. Intimate. Genuine.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__time">
+                <h3 class="timeline__label">Cocktail Hour</h3>
+              </div>
+              <div class="timeline__content">
+                <p class="timeline__desc">
+                  Guests wander the terrace. Oysters are shucked. Local wine
+                  pours. The photographer captures candid joy while the sun
+                  begins its descent.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__time">
+                <h3 class="timeline__label">Reception</h3>
+              </div>
+              <div class="timeline__content">
+                <p class="timeline__desc">
+                  Toasts under string lights. First dances on weathered wood
+                  floors. The night unfolds at its own pace—laughter, tears, and
+                  music drifting out over the water.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Details Teaser Section -->
+      <section class="details-teaser" aria-labelledby="details-heading">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label">Good to Know</span>
+            <h2 class="section-title" id="details-heading">
+              The details that matter
+            </h2>
+          </header>
+
+          <div class="details-grid reveal-stagger">
+            <a href="details.html#capacity" class="detail-card">
+              <svg
+                class="detail-card__icon"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <h3 class="detail-card__title">Guest Capacity</h3>
+              <p class="detail-card__text">
+                Intimate gatherings of 20 to 150 guests
+              </p>
+            </a>
+
+            <a href="details.html#rain-plan" class="detail-card">
+              <svg
+                class="detail-card__icon"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25" />
+                <line x1="8" y1="16" x2="8.01" y2="16" />
+                <line x1="8" y1="20" x2="8.01" y2="20" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+                <line x1="12" y1="22" x2="12.01" y2="22" />
+                <line x1="16" y1="16" x2="16.01" y2="16" />
+                <line x1="16" y1="20" x2="16.01" y2="20" />
+              </svg>
+              <h3 class="detail-card__title">Rain Plan</h3>
+              <p class="detail-card__text">
+                Covered pavilion with the same view
+              </p>
+            </a>
+
+            <a href="details.html#seasons" class="detail-card">
+              <svg
+                class="detail-card__icon"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+              <h3 class="detail-card__title">Seasons</h3>
+              <p class="detail-card__text">
+                Beautiful year-round with peak bloom in spring
+              </p>
+            </a>
+
+            <a href="details.html#accessibility" class="detail-card">
+              <svg
+                class="detail-card__icon"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+              <h3 class="detail-card__title">Accessibility</h3>
+              <p class="detail-card__text">
+                Full ADA access to all venues and suites
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="container container--narrow">
+          <div class="reveal">
+            <span class="section-label">Begin Here</span>
+            <h2 class="section-title" id="cta-heading">
+              Let's talk about your day
+            </h2>
+            <p class="section-subtitle">
+              We'd love to hear your story. Reach out and we'll be in touch
+              within 48 hours to discuss availability, answer questions, and
+              schedule a tour.
+            </p>
+            <a href="inquiry.html" class="btn btn--white">Send an inquiry</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <p class="footer__logo">Sea Glass Venue</p>
+          <p class="footer__tagline">Where the coast becomes the moment.</p>
+        </div>
+
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="gallery.html" class="footer__link">Gallery</a>
+          <a href="details.html" class="footer__link">Details</a>
+          <a href="inquiry.html" class="footer__link">Inquiry</a>
+        </nav>
+
+        <div class="footer__location">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Pawleys Island, South Carolina</span>
+        </div>
+
+        <p class="footer__bottom">
+          © 2026 Sea Glass Venue. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
+

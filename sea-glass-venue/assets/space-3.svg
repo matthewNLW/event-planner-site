@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="space3Grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C4A35A;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FAF8F5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#space3Grad)"/>
+  <text x="400" y="290" font-family="Georgia, serif" font-size="28" fill="#2C2C2C" text-anchor="middle" opacity="0.3">Venue Space 3</text>
+  <text x="400" y="330" font-family="sans-serif" font-size="14" fill="#6B6B6B" text-anchor="middle" opacity="0.4">Ceremony lawn</text>
+</svg>

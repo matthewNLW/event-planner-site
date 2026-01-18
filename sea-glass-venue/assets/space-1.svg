@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="space1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAF8F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7D9A8C;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#space1Grad)"/>
+  <text x="400" y="290" font-family="Georgia, serif" font-size="28" fill="#2C2C2C" text-anchor="middle" opacity="0.3">Venue Space 1</text>
+  <text x="400" y="330" font-family="sans-serif" font-size="14" fill="#6B6B6B" text-anchor="middle" opacity="0.4">Main terrace view</text>
+</svg>

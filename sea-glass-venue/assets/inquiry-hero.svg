@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="inquiryHeroGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C4A35A;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#6B8A7A;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="800" fill="#FAF8F5"/>
+  <rect width="1920" height="800" fill="url(#inquiryHeroGrad)"/>
+  <path d="M 800 600 Q 900 550, 1000 600" stroke="#7D9A8C" stroke-width="2" fill="none" opacity="0.3"/>
+  <text x="960" y="380" font-family="Georgia, serif" font-size="42" fill="#2C2C2C" text-anchor="middle" opacity="0.3">Inquiry Hero</text>
+  <text x="960" y="440" font-family="sans-serif" font-size="18" fill="#6B6B6B" text-anchor="middle" opacity="0.4">Couple on shore (1920×800)</text>
+</svg>

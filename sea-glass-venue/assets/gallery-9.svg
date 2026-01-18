@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <rect width="600" height="800" fill="#F5F2ED"/>
+  <rect x="100" y="200" width="400" height="300" fill="#7D9A8C" opacity="0.12"/>
+  <text x="300" y="490" font-family="Georgia, serif" font-size="24" fill="#2C2C2C" text-anchor="middle" opacity="0.3">Cottage Interior</text>
+</svg>

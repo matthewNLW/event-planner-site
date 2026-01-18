@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Begin planning your wedding at Sea Glass Venue. Send an inquiry and we'll be in touch within 48 hours.">
+  <title>Inquiry | Sea Glass Venue</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav is-visible" role="banner">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Sea Glass Venue - Home">
+        Sea Glass Venue
+      </a>
+      
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav__links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="details.html" class="nav__link">Details</a>
+        <a href="inquiry.html" class="nav__link is-active" aria-current="page">Inquiry</a>
+      </nav>
+      
+      <div class="nav__overlay" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" aria-label="Inquiry introduction">
+    <div class="hero__media">
+      <img src="assets/inquiry-hero.svg" alt="Couple walking hand in hand along the Pawleys Island shore at sunset" loading="eager">
+      <div class="hero__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="page-hero__content">
+      <h1 class="page-hero__title">Begin Your Day</h1>
+      <p class="page-hero__subtitle">Tell us a little about you. We'll be in touch soon.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="inquiry-section" aria-labelledby="inquiry-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 class="sr-only" id="inquiry-heading">Inquiry Form</h2>
+          <p class="section-subtitle text-center">We respond to every inquiry within 48 hours. Share as much or as little as you'd like—we're here to help.</p>
+        </header>
+        
+        <!-- Inquiry Form -->
+        <form class="inquiry-form reveal" id="inquiry-form" novalidate aria-label="Wedding inquiry form">
+          <div class="form-grid">
+            
+            <!-- Full Name -->
+            <div class="form-group">
+              <label class="form-label" for="full-name">
+                Full Name <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input 
+                type="text" 
+                class="form-input" 
+                id="full-name" 
+                name="fullName" 
+                required 
+                autocomplete="name"
+                aria-required="true"
+                aria-describedby="full-name-error"
+              >
+              <span class="form-error" id="full-name-error" role="alert">Please enter your name.</span>
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group">
+              <label class="form-label" for="email">
+                Email <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input 
+                type="email" 
+                class="form-input" 
+                id="email" 
+                name="email" 
+                required 
+                autocomplete="email"
+                aria-required="true"
+                aria-describedby="email-error"
+              >
+              <span class="form-error" id="email-error" role="alert">Please enter a valid email address.</span>
+            </div>
+            
+            <!-- Phone -->
+            <div class="form-group">
+              <label class="form-label" for="phone">
+                Phone <span class="text-light">(optional)</span>
+              </label>
+              <input 
+                type="tel" 
+                class="form-input" 
+                id="phone" 
+                name="phone"
+                autocomplete="tel"
+              >
+            </div>
+            
+            <!-- Event Date -->
+            <div class="form-group">
+              <label class="form-label" for="event-date">
+                Preferred Event Date <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input 
+                type="date" 
+                class="form-input" 
+                id="event-date" 
+                name="eventDate" 
+                required
+                aria-required="true"
+                aria-describedby="event-date-error"
+              >
+              <span class="form-error" id="event-date-error" role="alert">Please select your preferred date.</span>
+            </div>
+            
+            <!-- Guest Count -->
+            <div class="form-group">
+              <label class="form-label" for="guest-count">
+                Estimated Guest Count <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input 
+                type="number" 
+                class="form-input" 
+                id="guest-count" 
+                name="guestCount" 
+                min="1" 
+                max="150" 
+                required
+                aria-required="true"
+                aria-describedby="guest-count-error"
+              >
+              <span class="form-error" id="guest-count-error" role="alert">Please enter your guest count (1–150).</span>
+            </div>
+            
+            <!-- Ceremony Type -->
+            <div class="form-group">
+              <label class="form-label" for="ceremony-type">
+                Ceremony Type
+              </label>
+              <select 
+                class="form-select" 
+                id="ceremony-type" 
+                name="ceremonyType"
+              >
+                <option value="">Select an option</option>
+                <option value="on-site">On-site ceremony</option>
+                <option value="off-site">Off-site ceremony (reception only)</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+            
+            <!-- Arrival Date -->
+            <div class="form-group">
+              <label class="form-label" for="arrival-date">
+                Arrival Date <span class="text-light">(if staying nearby)</span>
+              </label>
+              <input 
+                type="date" 
+                class="form-input" 
+                id="arrival-date" 
+                name="arrivalDate"
+                aria-describedby="arrival-date-error"
+              >
+              <span class="form-error" id="arrival-date-error" role="alert">Arrival date must be before or on the event date.</span>
+            </div>
+            
+            <!-- Departure Date -->
+            <div class="form-group">
+              <label class="form-label" for="departure-date">
+                Departure Date <span class="text-light">(if staying nearby)</span>
+              </label>
+              <input 
+                type="date" 
+                class="form-input" 
+                id="departure-date" 
+                name="departureDate"
+                aria-describedby="departure-date-error"
+              >
+              <span class="form-error" id="departure-date-error" role="alert">Departure date must be after or on the event date.</span>
+            </div>
+            
+            <!-- Message -->
+            <div class="form-group form-group--full">
+              <label class="form-label" for="message">
+                Tell Us About Your Vision
+              </label>
+              <textarea 
+                class="form-textarea" 
+                id="message" 
+                name="message" 
+                rows="5" 
+                placeholder="Share anything you'd like us to know—your story, your style, your questions..."
+              ></textarea>
+            </div>
+            
+            <!-- Updates Checkbox -->
+            <div class="form-group form-group--full">
+              <label class="form-checkbox">
+                <input 
+                  type="checkbox" 
+                  name="updates" 
+                  id="updates"
+                >
+                <span>I'd like to receive availability updates and venue news.</span>
+              </label>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="form-submit form-group--full">
+              <button type="submit" class="btn btn--primary">
+                Send Inquiry
+              </button>
+            </div>
+            
+          </div>
+        </form>
+        
+        <!-- Success Message (hidden by default) -->
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <svg class="form-success__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3>Thank you for reaching out</h3>
+          <p>We've received your inquiry and will be in touch within 48 hours. In the meantime, feel free to explore the <a href="gallery.html">gallery</a> or review the <a href="details.html">details</a>.</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">Sea Glass Venue</p>
+        <p class="footer__tagline">Where the coast becomes the moment.</p>
+      </div>
+      
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="index.html" class="footer__link">Home</a>
+        <a href="gallery.html" class="footer__link">Gallery</a>
+        <a href="details.html" class="footer__link">Details</a>
+        <a href="inquiry.html" class="footer__link">Inquiry</a>
+      </nav>
+      
+      <div class="footer__location">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <span>Pawleys Island, South Carolina</span>
+      </div>
+      
+      <p class="footer__bottom">© 2026 Sea Glass Venue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script defer src="js/main.js"></script>
+</body>
+</html>
+

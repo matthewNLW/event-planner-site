@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="900" fill="#F5F2ED"/>
+  <circle cx="300" cy="300" r="25" fill="#C4A35A" opacity="0.25"/>
+  <circle cx="500" cy="400" r="25" fill="#C4A35A" opacity="0.25"/>
+  <circle cx="1200" cy="350" r="25" fill="#C4A35A" opacity="0.25"/>
+  <text x="800" y="440" font-family="Georgia, serif" font-size="28" fill="#2C2C2C" text-anchor="middle" opacity="0.3">Reception Tables</text>
+</svg>
