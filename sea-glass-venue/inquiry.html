@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Begin planning your wedding at Sea Glass Venue. Send an inquiry and we'll be in touch within 48 hours.">
-  <title>Inquiry | Sea Glass Venue</title>
+  <title>Inquiry</title>
   
   <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"> -->
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <header class="nav is-visible" role="banner">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Sea Glass Venue - Home">
+      <a href="index.html" class="nav__logo" aria-label="Sea Glass Venue Home">
         Sea Glass Venue
       </a>
       
@@ -48,7 +48,7 @@
   <!-- Page Hero -->
   <section class="page-hero" aria-label="Inquiry introduction">
     <div class="hero__media">
-      <img src="assets/inquiry-hero.svg" alt="Couple walking hand in hand along the Pawleys Island shore at sunset" loading="eager">
+      <img src="assets/inquiry-hero.png" alt="Couple walking hand in hand along the Pawleys Island shore at sunset" loading="eager">
       <div class="hero__overlay" aria-hidden="true"></div>
     </div>
     <div class="page-hero__content">
@@ -67,7 +67,7 @@
         </header>
         
         <!-- Inquiry Form -->
-        <form class="inquiry-form reveal" id="inquiry-form" novalidate aria-label="Wedding inquiry form">
+        <form class="inquiry-form reveal" id="inquiry-form" novalidate aria-label="Wedding inquiry form" data-netlify="true">
           <div class="form-grid">
             
             <!-- Full Name -->
@@ -281,6 +281,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script defer src="js/animations.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 </html>

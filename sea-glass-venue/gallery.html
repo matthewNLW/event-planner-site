@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the gallery of Sea Glass Venue — coastal elegance, natural beauty, and unforgettable wedding moments in Pawleys Island, SC.">
-  <title>Gallery | Sea Glass Venue</title>
+  <meta name="description" content="Explore the gallery of Sea Glass Venue. Coastal elegance, natural beauty, and unforgettable wedding moments in Pawleys Island, SC.">
+  <title>Gallery</title>
   
   <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"> -->
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <header class="nav is-visible" role="banner">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Sea Glass Venue - Home">
+      <a href="index.html" class="nav__logo" aria-label="Sea Glass Venue Home">
         Sea Glass Venue
       </a>
       
@@ -48,7 +48,7 @@
   <!-- Page Hero -->
   <section class="page-hero" aria-label="Gallery introduction">
     <div class="hero__media">
-      <img src="assets/gallery-hero.svg" alt="Panoramic view of the Sea Glass Venue at golden hour" loading="eager">
+      <img src="assets/gallery-hero.png" alt="Panoramic view of the Sea Glass Venue at golden hour" loading="eager">
       <div class="hero__overlay" aria-hidden="true"></div>
     </div>
     <div class="page-hero__content">
@@ -64,55 +64,62 @@
         <header class="section-header reveal">
           <h2 class="sr-only" id="gallery-heading">Venue Photo Gallery</h2>
           <p class="section-subtitle">Click any image to explore.</p>
+          
+          <div class="gallery-filters reveal-stagger">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ceremony">Ceremony</button>
+            <button class="filter-btn" data-filter="reception">Reception</button>
+            <button class="filter-btn" data-filter="details">Details</button>
+          </div>
         </header>
         
-        <div class="gallery-grid reveal" role="list" aria-label="Gallery images">
+        <div class="gallery-masonry reveal" role="list" aria-label="Gallery images">
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="0" aria-label="View image 1 of 12">
-            <img src="assets/gallery-1.svg" alt="Ceremony arch adorned with flowing white fabric against the ocean horizon" loading="lazy">
+            <img src="assets/gallery-1.png" alt="Ceremony arch adorned with flowing white fabric against the ocean horizon" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="1" aria-label="View image 2 of 12">
-            <img src="assets/gallery-2.svg" alt="Wooden aisle leading to the shore lined with delicate wildflowers" loading="lazy">
+            <img src="assets/gallery-2.png" alt="Wooden aisle leading to the shore lined with delicate wildflowers" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="2" aria-label="View image 3 of 12">
-            <img src="assets/gallery-3.svg" alt="Bridal suite bathed in soft morning light with ocean view" loading="lazy">
+            <img src="assets/space-5.png" alt="Bridal suite bathed in soft morning light with ocean view" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="3" aria-label="View image 4 of 12">
-            <img src="assets/gallery-4.svg" alt="Cocktail terrace at sunset with guests mingling" loading="lazy">
+            <img src="assets/space-1.png" alt="Cocktail terrace at sunset with guests mingling" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="4" aria-label="View image 5 of 12">
-            <img src="assets/gallery-5.svg" alt="Reception tables set with linen napkins and candlelight under the pavilion" loading="lazy">
+            <img src="assets/details-hero.png" alt="Reception tables set with linen napkins and candlelight under the pavilion" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="5" aria-label="View image 6 of 12">
-            <img src="assets/gallery-6.svg" alt="Dance floor under string lights with ocean breeze" loading="lazy">
+            <img src="assets/experience-reception.png" alt="Dance floor under string lights with ocean breeze" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="6" aria-label="View image 7 of 12">
-            <img src="assets/gallery-7.svg" alt="Close-up of sea glass and coastal details in the decor" loading="lazy">
+            <img src="assets/space-2.png" alt="Close-up of sea glass and coastal details in the decor" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="7" aria-label="View image 8 of 12">
-            <img src="assets/gallery-8.svg" alt="Couple walking along the shoreline at dusk" loading="lazy">
+            <img src="assets/inquiry-hero.png" alt="Couple walking along the shoreline at dusk" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="8" aria-label="View image 9 of 12">
-            <img src="assets/gallery-9.svg" alt="Groomsmen cottage with rustic coastal charm" loading="lazy">
+            <img src="assets/space-3.png" alt="Groomsmen cottage with rustic coastal charm" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="9" aria-label="View image 10 of 12">
-            <img src="assets/gallery-10.svg" alt="Aerial view of the venue nestled between dunes and ocean" loading="lazy">
+            <img src="assets/gallery-hero.png" alt="Aerial view of the venue nestled between dunes and ocean" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="10" aria-label="View image 11 of 12">
-            <img src="assets/gallery-11.svg" alt="Evening reception with lanterns glowing softly" loading="lazy">
+            <img src="assets/space-6.png" alt="Evening reception with lanterns glowing softly" loading="lazy">
           </figure>
           
           <figure class="gallery-item" role="listitem" tabindex="0" data-index="11" aria-label="View image 12 of 12">
-            <img src="assets/gallery-12.svg" alt="First dance captured with the last light of day" loading="lazy">
+            <img src="assets/experience-evening.png" alt="First dance captured with the last light of day" loading="lazy">
           </figure>
         </div>
       </div>
@@ -190,6 +197,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script defer src="js/animations.js"></script>
   <script defer src="js/main.js"></script>
   <script defer src="js/gallery.js"></script>
 </body>

@@ -32,17 +32,6 @@
     }
   }
 
-  // Handle nav scroll state
-  function handleNavScroll() {
-    if (!nav) return;
-
-    if (window.scrollY > 100) {
-      nav.classList.add("is-scrolled");
-    } else {
-      nav.classList.remove("is-scrolled");
-    }
-  }
-
   // Mobile nav toggle
   function toggleMobileNav() {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
@@ -70,10 +59,6 @@
   // Initialize navigation
   function initNav() {
     initNavReveal();
-
-    // Scroll handler
-    window.addEventListener("scroll", handleNavScroll, { passive: true });
-    handleNavScroll(); // Check initial state
 
     // Mobile nav toggle
     if (navToggle) {
@@ -110,42 +95,6 @@
     setTimeout(() => {
       heroContent.classList.add("is-visible");
     }, delay);
-  }
-
-  /**
-   * Scroll reveal animations using IntersectionObserver
-   */
-  function initScrollReveal() {
-    if (prefersReducedMotion) {
-      // If reduced motion, show all elements immediately
-      document.querySelectorAll(".reveal, .reveal-stagger").forEach((el) => {
-        el.classList.add("is-revealed");
-      });
-      return;
-    }
-
-    const revealElements = document.querySelectorAll(
-      ".reveal, .reveal-stagger",
-    );
-
-    if (!revealElements.length) return;
-
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px 0px -100px 0px",
-      threshold: 0.1,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-revealed");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    revealElements.forEach((el) => observer.observe(el));
   }
 
   /**
@@ -330,7 +279,7 @@
   function init() {
     initNav();
     initHeroReveal();
-    initScrollReveal();
+    // initScrollReveal handled by animations.js
     initFaqAccordion();
     initFormValidation();
     initSmoothScroll();
