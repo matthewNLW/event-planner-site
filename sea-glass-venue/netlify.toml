@@ -1,6 +1,6 @@
 [build]
   # No build command is required for a pure static site
-  command = "" 
+  command = "echo 'No build command required'"
   # Publish the directory where netlify.toml is located
   publish = "."
 
